@@ -1,0 +1,69 @@
+:root {
+  --bg: #ececef;
+  --bg-2: #f4f4f6;
+  --card: #ffffff;
+  --ink: #0a0a0c;
+  --ink-2: #1d1d22;
+  --muted: #6b6b73;
+  --muted-2: #9a9aa3;
+  --line: #e7e7ec;
+  --accent: #ff5b2e;
+  --accent-soft: #fff1ec;
+  --shadow-sm: 0 1px 2px rgba(15, 15, 20, 0.04),
+    0 2px 6px rgba(15, 15, 20, 0.04);
+  --shadow-md: 0 1px 2px rgba(15, 15, 20, 0.05),
+    0 8px 24px rgba(15, 15, 20, 0.06);
+  --shadow-lg: 0 2px 4px rgba(15, 15, 20, 0.05),
+    0 18px 50px rgba(15, 15, 20, 0.08);
+  --radius: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+  background-image: radial-gradient(
+      1200px 600px at 80% -10%,
+      rgba(255, 91, 46, 0.06),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 600px at -10% 110%,
+      rgba(60, 90, 255, 0.05),
+      transparent 60%
+    );
+  background-attachment: fixed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--ink);
+  color: #fff;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
